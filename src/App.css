@@ -1,0 +1,54 @@
+
+
+html, body {
+  height: 100%; 
+  overflow: hidden; 
+  margin: 0; 
+}
+
+.photos {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: calc(100vh - 4rem); 
+  overflow: auto; 
+}
+
+.photos h1 {
+  font-size: 2em;
+  color: #333;
+  text-align: center;
+}
+
+.photos ul {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+  gap: 1rem;
+}
+
+.photos li {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 1rem;
+}
+
+.photos img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 1rem;
+}
+
+.loading, .error {
+  text-align: center;
+  font-size: 1.5em;
+  color: #ff0000;
+}
